@@ -4,7 +4,10 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.elasticsearch.client.ClientConfiguration;
 import org.springframework.data.elasticsearch.client.elc.ElasticsearchConfiguration;
-
+/**
+ * Elastic search configuration
+ * Since it is connected to localhost no SSL is added. In prod env add ssl also.
+ */
 @Configuration
 public class ElasticConfig extends ElasticsearchConfiguration{
 
